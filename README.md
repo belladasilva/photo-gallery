@@ -1,55 +1,33 @@
-# 📸 Gallery of Photos
+# Photo Gallery
 
-A **secure image upload and display** web application built using **PHP, MySQL, and CSS**.  
-Users can **upload images**, store them in a **database**, and view them in a dynamic gallery.  
-This project focuses on **database optimization, security, and responsive design.**
+A small PHP and MySQL project I built to practice image uploads,
+database integration, and displaying stored images in a gallery.
 
----
+## What I worked with
 
-## 🚀 Features  
-✅ **Secure Image Uploads** – Validates and stores images safely  
-✅ **Dynamic Image Display** – Fetches images from the database  
-✅ **Optimized Database Queries** – Fast and efficient loading  
-✅ **Server-Side Security** – Prevents malicious file uploads  
+- PHP
+- MySQL
+- HTML
+- CSS
 
----
+## Features
 
-## 🛠️ Tech Stack  
-- **Frontend:** HTML, CSS
-- **Backend:** PHP, MySQL  
-- **Server:** Apache (XAMPP, WAMP, or LAMP)  
+- Upload images
+- Store image information in MySQL
+- Display uploaded images in a gallery
+- Basic file validation
 
----
+## Running locally
 
-## ⚡ Installation & Setup  
-### 1️⃣ Clone the Repository
-``` bash
-git clone https://github.com/belladasilva/GalleryOfPhotos.git
-cd GalleryOfPhotos
-```
-### 2️⃣ Start Your Local Server
-```
-Open XAMPP (or WAMP/LAMP)
-Start Apache and MySQL
-```
-### 3️⃣ Set Up the Database
-```
-Open PHPMyAdmin (http://localhost/phpmyadmin)
-Create a new database: gallery_db
-Import the provided gallery.sql file
-```
-### 4️⃣ Run the Application
-```
-Move the project folder to your web server (htdocs for XAMPP).
-Open a browser and go to:
-http://localhost/GalleryOfPhotos
-```
-## 🎥 Demo Video
-🔗 Watch the Demo (Coming Soon!)
+This project was originally built using XAMPP.
 
-## 📩 Contact
-For more about me, check out my **GitHub Profile README**:  
-🔗 [github.com/belladasilva](https://github.com/belladasilva)
+1. Clone the repository
+2. Place the project inside your XAMPP `htdocs` folder
+3. Start Apache and MySQL
+4. Import the included database file
+5. Open the project through `localhost`
 
-⭐ If you like this project, give it a star! 🌟
+## About
 
+This is an older learning project and is kept here as part of my
+development journey.
