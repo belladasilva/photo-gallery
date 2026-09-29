@@ -1,9 +1,13 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "Italo@071010";
-$myDB = "gallery";
+$username = "photo_gallery_app";
+$password = getenv("PHOTO_GALLERY_DB_PASSWORD");
+$myDB = "photo_gallery";
 $port = 3306;
+
+if ($password === false || $password === "") {
+    die("Missing PHOTO_GALLERY_DB_PASSWORD environment variable.");
+}
 
 try {
     $pdo = new PDO("mysql:host=$servername;port=$port;dbname=$myDB", $username, $password);

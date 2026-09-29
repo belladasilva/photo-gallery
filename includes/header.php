@@ -13,6 +13,6 @@
 
 <body>
     <header>
-        <h1>ISA'S GALLERY</h1>
+        <h1>Photo Gallery</h1>
     </header>
 </body>

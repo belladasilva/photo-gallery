@@ -1,0 +1,7 @@
+.idea/
+
+uploads/*
+!uploads/.gitkeep
+
+resized/*
+!resized/.gitkeep

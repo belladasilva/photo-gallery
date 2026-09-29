@@ -19,13 +19,23 @@ database integration, and displaying stored images in a gallery.
 
 ## Running locally
 
-This project was originally built using XAMPP.
+Install standalone PHP 8.4 and enable the `fileinfo`, `gd`, and `pdo_mysql`
+extensions. Start a local MySQL or MariaDB server on port 3306. Import
+`sql/gallery.sql` once to create the `photo_gallery` database and `images`
+table. Create the `photo_gallery_app` user with `SELECT` and `INSERT` access to
+that database. Keep its password outside the repository and provide it through
+the `PHOTO_GALLERY_DB_PASSWORD` environment variable.
 
-1. Clone the repository
-2. Place the project inside your XAMPP `htdocs` folder
-3. Start Apache and MySQL
-4. Import the included database file
-5. Open the project through `localhost`
+On the configured Windows machine, start the app from the project directory:
+
+```powershell
+$securePassword = Import-Clixml (Join-Path $env:APPDATA 'PhotoGallery\app-password.clixml')
+$env:PHOTO_GALLERY_DB_PASSWORD = [System.Net.NetworkCredential]::new('', $securePassword).Password
+php -S 127.0.0.1:8000 -t .
+```
+
+Open `http://127.0.0.1:8000/`. The `uploads` and `resized` directories must be
+writable for image uploads.
 
 ## About
 

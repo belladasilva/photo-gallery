@@ -1,7 +1,7 @@
 -- gallery.sql
-CREATE DATABASE gallery;
+CREATE DATABASE photo_gallery;
 
-USE gallery;
+USE photo_gallery;
 
 CREATE TABLE images (
     id INT AUTO_INCREMENT PRIMARY KEY,
